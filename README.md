@@ -1,2 +1,2 @@
-# devops_andersen_course
-this repository for andersen course
+# Devops andersen course
+This repository is for tasks of andersen course
