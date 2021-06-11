@@ -6,3 +6,5 @@ Today I have learned:
 ## 2. 07.06.2021
 * I studied to install Debian 10 on Virtual Box
 * I watched one video about Ansible
+## 3. 11.06.2021
+* I studied about linux commands
