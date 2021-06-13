@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo netstat -tunapl | awk -v name_process=$1 '$0 ~ name_process {print $5}'
+sudo netstat -tunapl | awk -v name_process=$1 '$0 ~ name_process {print $5}' | cut -d: -f1 | sort | uniq -c | sort | tail -n$2 | grep -oP '(\d+\.){3}\d+' | while read IP ; do whois $IP | awk -F':' '/^Organization/ {print $2}' ; done
